@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="0dp"
+        tools:context="org.yyama.moneycounter.inr.MainActivity" >
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:shrinkColumns="2,3"
+            android:stretchColumns="2,3" >
+
+            <TableRow
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/kind" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/num" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sub_total" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img1000rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr1000rs" />
+
+                <TextView
+                    android:id="@+id/Text1000rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs1000" />
+
+                <TextView
+                    android:id="@+id/Num1000rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum1000rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0500rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0500rs" />
+
+                <TextView
+                    android:id="@+id/Text0500rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0500" />
+
+                <TextView
+                    android:id="@+id/Num0500rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0500rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0100rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0100rs" />
+
+                <TextView
+                    android:id="@+id/Text0100rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0100" />
+
+                <TextView
+                    android:id="@+id/Num0100rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0100rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0050rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0050rs" />
+
+                <TextView
+                    android:id="@+id/Text0050rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0050" />
+
+                <TextView
+                    android:id="@+id/Num0050rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0050rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0020rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0020rs" />
+
+                <TextView
+                    android:id="@+id/Text0020rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0020" />
+
+                <TextView
+                    android:id="@+id/Num0020rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0020rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0010rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0010rs" />
+
+                <TextView
+                    android:id="@+id/Text0010rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0010" />
+
+                <TextView
+                    android:id="@+id/Num0010rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0010rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0005rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0005rs" />
+
+                <TextView
+                    android:id="@+id/Text0005rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0005" />
+
+                <TextView
+                    android:id="@+id/Num0005rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0005rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0002rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0002rs" />
+
+                <TextView
+                    android:id="@+id/Text0002rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0002" />
+
+                <TextView
+                    android:id="@+id/Num0002rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0002rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0001rs"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0001rs" />
+
+                <TextView
+                    android:id="@+id/Text0001rs"
+                    style="@style/LinkStyle"
+                    android:text="@string/rs0001" />
+
+                <TextView
+                    android:id="@+id/Num0001rs"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0001rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow style="@style/RowStyle" >
+
+                <ImageView
+                    android:id="@+id/img0050ps"
+                    style="@style/ImgStyle"
+                    android:src="@drawable/inr0050ps" />
+
+                <TextView
+                    android:id="@+id/Text0050ps"
+                    style="@style/LinkStyle"
+                    android:text="@string/ps0050" />
+
+                <TextView
+                    android:id="@+id/Num0050ps"
+                    style="@style/NumStyle" />
+
+                <TextView
+                    android:id="@+id/Sum0050ps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/TableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp" >
+
+        <TableRow
+            android:id="@+id/TableRow18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp" >
+
+            <Button
+                android:id="@+id/btnClear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0"
+                android:text="@string/all_clear" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="5"
+                android:text="@string/total"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/allSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="0dp"
+                android:layout_weight="10"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/adSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

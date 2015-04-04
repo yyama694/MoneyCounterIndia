@@ -1,0 +1,66 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LinkStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@drawable/text_color</item>
+        <item name="android:background">@drawable/background_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="LinkStyleCent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@drawable/text_color_cent</item>
+        <item name="android:background">@drawable/background_color</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="RowStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="ImgStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:contentDescription">image</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="NumStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
