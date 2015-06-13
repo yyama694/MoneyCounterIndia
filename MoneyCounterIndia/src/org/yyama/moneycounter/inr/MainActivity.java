@@ -293,7 +293,7 @@ public class MainActivity extends Activity implements OnClickListener,
 			// 追記する
 			for (int i = 0; i < paisaValue.length; i++) {
 				writer.append(paisaValue[i] + "," + data.get(paisaValue[i])
-						+ System.lineSeparator());
+						+ System.getProperty("line.separator"));
 			}
 			writer.close();
 		} catch (IOException e) {
@@ -313,6 +313,7 @@ public class MainActivity extends Activity implements OnClickListener,
 					in, "UTF-8"));
 			while ((lineBuffer = reader.readLine()) != null) {
 				String[] strs = lineBuffer.split(",");
+				Log.d("yyama", lineBuffer);
 				Integer kind = Integer.parseInt(strs[0]);
 				data.put(kind, Integer.parseInt(strs[1]));
 			}
@@ -491,7 +492,7 @@ public class MainActivity extends Activity implements OnClickListener,
 							// 追記する
 							for (int i : paisaValue) {
 								pw.append(i + "," + data.get(i)
-										+ System.lineSeparator());
+										+ System.getProperty("line.separator"));
 							}
 							pw.flush();
 							Toast.makeText(MainActivity.this,
@@ -557,7 +558,7 @@ public class MainActivity extends Activity implements OnClickListener,
 					Toast.makeText(
 							this,
 							getString(R.string.opend_file)
-									+ System.lineSeparator()
+									+ System.getProperty("line.separator")
 									+ data.getStringExtra("file_title"),
 							Toast.LENGTH_LONG).show();
 				} catch (Exception e) {

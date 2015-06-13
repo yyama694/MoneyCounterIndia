@@ -3,10 +3,8 @@ package org.yyama.moneycounter.inr;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-
 
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -21,6 +19,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.net.Uri;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -30,7 +29,6 @@ public class Screenshot {
 			.getExternalStorageDirectory().toString()
 			+ "/"
 			+ Environment.DIRECTORY_PICTURES + "/" + "MoneyConterINR/";
-
 	public static void saveScreen(Activity act) {
 		createDir();
 
@@ -77,7 +75,7 @@ public class Screenshot {
 		Toast.makeText(
 				act,
 				act.getString(R.string.saved_screenshot)
-						+ System.lineSeparator()
+						+ System.getProperty("line.separator")
 						+ act.getString(R.string.destination) + "["
 						+ Screenshot.getFolder() + "]", Toast.LENGTH_LONG)
 				.show();
@@ -155,7 +153,7 @@ public class Screenshot {
 		if (file.exists()) {
 			return;
 		}
-
+		Log.d("yyama","directory:" + directory);
 		if (!(new File(directory).mkdirs())) {
 			throw new RuntimeException("can't make directory!");
 		}

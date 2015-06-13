@@ -39,21 +39,24 @@
                     android:layout_height="wrap_content"
                     android:layout_span="2"
                     android:gravity="center_horizontal"
-                    android:text="@string/kind" />
+                    android:text="@string/kind"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/TextView01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="@string/num" />
+                    android:text="@string/num"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="@string/sub_total" />
+                    android:text="@string/sub_total"
+                    android:textColor="#FF111111" />
             </TableRow>
 
             <TableRow style="@style/RowStyle" >
@@ -70,13 +73,15 @@
 
                 <TextView
                     android:id="@+id/Num1000rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum1000rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -94,13 +99,15 @@
 
                 <TextView
                     android:id="@+id/Num0500rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0500rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -118,13 +125,15 @@
 
                 <TextView
                     android:id="@+id/Num0100rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0100rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -142,13 +151,15 @@
 
                 <TextView
                     android:id="@+id/Num0050rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0050rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -166,13 +177,15 @@
 
                 <TextView
                     android:id="@+id/Num0020rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0020rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -190,13 +203,15 @@
 
                 <TextView
                     android:id="@+id/Num0010rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0010rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -214,13 +229,15 @@
 
                 <TextView
                     android:id="@+id/Num0005rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0005rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -238,13 +255,15 @@
 
                 <TextView
                     android:id="@+id/Num0002rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0002rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -262,13 +281,15 @@
 
                 <TextView
                     android:id="@+id/Num0001rs"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0001rs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -286,13 +307,15 @@
 
                 <TextView
                     android:id="@+id/Num0050ps"
-                    style="@style/NumStyle" />
+                    style="@style/NumStyle"
+                    android:textColor="#FF111111" />
 
                 <TextView
                     android:id="@+id/Sum0050ps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
+                    android:textColor="#FF111111"
                     android:textSize="18sp" />
             </TableRow>
         </TableLayout>
@@ -337,6 +360,7 @@
                 android:layout_marginTop="0dp"
                 android:layout_weight="5"
                 android:text="@string/total"
+                android:textColor="#FF111111"
                 android:textSize="25sp" />
 
             <TextView
@@ -346,6 +370,7 @@
                 android:layout_gravity="right|top"
                 android:layout_marginTop="0dp"
                 android:layout_weight="10"
+                android:textColor="#FF111111"
                 android:textSize="25sp" />
         </TableRow>
     </TableLayout>
