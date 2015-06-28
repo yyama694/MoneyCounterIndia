@@ -23,6 +23,8 @@ import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.LightingColorFilter;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.internal.view.ContextThemeWrapper;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Gravity;
@@ -53,7 +55,7 @@ import com.google.android.gms.ads.InterstitialAd;
 /*
  * 
  */
-public class MainActivity extends Activity implements OnClickListener,
+public class MainActivity extends AppCompatActivity implements OnClickListener,
 		OnTouchListener {
 	int[] paisaValue = { 50, 100, 200, 500, 1000, 2000, 5000, 10000, 50000,
 			100000, 20000 };
@@ -328,8 +330,6 @@ public class MainActivity extends Activity implements OnClickListener,
 		int now = getNow(v.getId());
 		((TextView) dialog.findViewById(R.id.edit))
 				.setText(String.valueOf(now));
-		((TextView) dialog.findViewById(R.id.edit))
-				.setText(String.valueOf(now));
 		AlertDialog.Builder builder = new Builder(this);
 		builder.setView(dialog);
 		builder.setTitle(((TextView) v).getText() + " ");
@@ -429,7 +429,6 @@ public class MainActivity extends Activity implements OnClickListener,
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-
 		return true;
 	}
 
@@ -442,10 +441,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		case R.id.screenshot:
 			Screenshot.saveScreen(this);
 			if (interstitial.isLoaded()) {
-				Log.d("yyama", "インターステシャルはロードされています。");
 				interstitial.show();
-			} else {
-				Log.d("yyama", "インターステシャルはロードされていません。");
 			}
 			add2Setting();
 			break;

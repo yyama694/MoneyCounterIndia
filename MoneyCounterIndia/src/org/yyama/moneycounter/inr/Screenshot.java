@@ -25,12 +25,31 @@ import android.widget.Toast;
 
 public class Screenshot {
 	static View view;
-	private static final String directory = Environment
+	private static final String baseDir = Environment
 			.getExternalStorageDirectory().toString()
 			+ "/"
-			+ Environment.DIRECTORY_PICTURES + "/" + "MoneyConterINR/";
+			+ Environment.DIRECTORY_PICTURES;
+	private static final String directory = baseDir + "/" + "MoneyConterINR/";
+
 	public static void saveScreen(Activity act) {
-		createDir();
+		Log.d("yyama", "baseDir" + baseDir);
+		Log.d("yyama",
+				"ExistBaseDir:"
+						+ String.valueOf((new File(baseDir).isDirectory())));
+		if (!new File(baseDir).isDirectory()) {
+			// sdカードが認識できない場合
+			Toast.makeText(act, R.string.no_sd_card, Toast.LENGTH_LONG).show();
+			return;
+		}
+		try {
+			createDir();
+		} catch (Exception e1) {
+			// フォルダが作成できない場合
+			Toast.makeText(act, R.string.can_not_be_saved, Toast.LENGTH_LONG)
+					.show();
+			e1.printStackTrace();
+			return;
+		}
 
 		String fileName = String.format(
 				"MoneyCounter_%1$tY%1$tm%1$td_%1$tH%1$tM%1$tS_%1$tL.png",
@@ -148,14 +167,15 @@ public class Screenshot {
 		return bitmap;
 	}
 
-	private static void createDir() {
+	private static void createDir() throws Exception {
 		File file = new File(directory);
+		Log.d("yyama", "directory:" + directory);
 		if (file.exists()) {
 			return;
 		}
-		Log.d("yyama","directory:" + directory);
+		Log.d("yyama", "directory:" + directory);
 		if (!(new File(directory).mkdirs())) {
-			throw new RuntimeException("can't make directory!");
+			throw new Exception("can't make directory!");
 		}
 	}
 

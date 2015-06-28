@@ -39,6 +39,8 @@
     <string name="all_crear_confirm_title">Initialize confirmation</string>
     <string name="all_crear_confirm_msg">Are you sure you want to clear all?</string>
     <string name="saved_screenshot">saved the screen shot.</string>
+    <string name="no_sd_card">does not recognize the SD card.</string>
+    <string name="can_not_be_saved">can not be saved.</string>
     <string name="destination">Destination</string>
 
 </resources>
